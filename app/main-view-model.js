@@ -8,6 +8,8 @@ function getMessage(counter) {
     }
 }
 
+
+
 function createViewModel() {
     const viewModel = new Observable();
     viewModel.counter = 42;
@@ -17,6 +19,13 @@ function createViewModel() {
         viewModel.counter--;
         viewModel.set("message", getMessage(viewModel.counter));
     };
+
+    viewModel.gotoLogin = (args) => {
+        const button = args.object
+        const page = button.page
+
+        page.frame.navigate("/views/login/login-page")
+    }
 
     return viewModel;
 }

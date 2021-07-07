@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.demo',
+  id: 'org.nativescript.mercearia',
   appPath: 'app',
   appResourcesPath: 'App_Resources',
   android: {

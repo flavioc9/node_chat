@@ -1,0 +1,13 @@
+<Page loaded="onLoad">
+    <ActionBar title="Login" icon="" />
+    <FlexboxLayout class="form">
+        <StackLayout>
+            <Image src="~/images/logo.png" />
+            <TextField id="email" text="{{ email }}" hint="Email Address"
+            keyboardType="email" autocorrect="false" autocapitalizationType="none"
+            class="input input-border" />
+            <TextField hint="Password" secure="true" text="{{ password }}"/>
+            <Button text="Login" class="btn btn-primary" tap="signIn"/>
+        </StackLayout>
+    </FlexboxLayout>
+</Page>
